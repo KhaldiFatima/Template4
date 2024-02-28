@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Settings</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/monster.css">
+        <link rel="stylesheet" href="css/framework.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex">
+            <div class="saidbar d-flex align-c f-dir-c p-relative p-20">
+                <h3 class=" m-top-0 ">Fatima</h3>
+                <ul>
+                    <li><a class=" d-block p-10 bor-ra-10" href="index.html"><i class="fa-solid fa-chart-bar"></i><span class="hidd-tel ">Dashboard</span> </a> </li>
+                    <li><a class="active d-block p-10 bor-ra-10" href="settings.html"><i class="fa-solid fa-gear"></i><span class="hidd-tel">Settings</span></a> </li>
+                    <li><a class="d-block p-10 bor-ra-10" href="profile.html"></i><i class="fa-regular fa-user"></i><span class="hidd-tel">profile</span></a> </li>
+                    <li><a class="d-block p-10 bor-ra-10" href="projects.html"></i><i class="fa-solid fa-diagram-project"> </i><span class="hidd-tel">Projects</span> </a></li>
+                    <li><a class="d-block p-10 bor-ra-10"  href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span class="hidd-tel">Courses</span></a></li>
+                    <li><a class="d-block p-10 bor-ra-10" href="friends.html"><i class="fa-solid fa-user"></i></i><span class="hidd-tel">Friends</span></a></li>
+                    <li><a class="d-block p-10 bor-ra-10" href="files.html"><i class="fa-regular fa-file"></i><span class="hidd-tel">Files</span></a></li>
+                    <li><a class="d-block p-10 bor-ra-10" href="palns.html"><i class="fa-regular fa-credit-card"></i><span class="hidd-tel">Palns</span></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="min-head between-f align-c p-20 bg-white">
+                    <div class="input p-relative"> 
+                        <input class="d-block bor-ra-10 p-relative " type="search" placeholder="type of keywourd">
+                    </div>
+                    <div class="port d-flex align-c gap-10">
+                        <a href="" class="p-relative"><i class="fa-regular fa-bell"></i></a>
+                        <img class=".b-ra-50" src="images/head.png"  alt="">    
+                    </div>
+                </div>
+                <div class="menu p-10 ">
+                    <h1 class=" width-ful p-relative ">Settings</h1>
+                    <div class="boxs d-grid">
+                        <div class="site bg-white p-10 bor-ra-10 p-bot-20">
+                            <h4>Site Control</h4>
+                            <p class="c-grey fo-s-14">Control The Wbsite IF There IS Maintenance</p> 
+                            <div class="between-f p-bot-10">
+                                <div>
+                                    <span>Website control</span>
+                                    <p class=" c-grey  fo-s-14">Open/Close Wbsite And TupeThe reason</p>    
+                                </div>
+                                <div>
+                                    <label>
+                                        <input class="switch-back" type="checkbox" checked>  
+                                        <div class="switch-front"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <textarea class="width-ful bor-ra-6 bor-1-ddd p-10 " name="close" placeholder="Close Message Content" ></textarea>
+                        </div>
+                        <div class="general bg-white p-10 bor-ra-10">
+                            <h4 >general Info </h4>
+                            <p class="fo-s-14 c-grey ">General Information About Your Account</p>
+                            <form action="">
+                                <label class="d-block m-bot-10  " for="">First Name</label>
+                                <input class="bor-ra-10 bor-1-ddd p-10 width-ful m-bot-10" type="text" name="f-name" placeholder="First Name">
+                                <label class="d-block m-bot-10  " for="">Last Name</label>
+                                <input class="bor-ra-10 bor-1-ddd p-10 width-ful m-bot-10" type="text" name="l-name" placeholder="Last Name">
+                                <div class="change d-flex align-c gap-10">
+                                    <label class="d-block  width-ful " for="">Email</label>
+                                    <input class="bor-ra-10 bor-1-ddd p-10 " type="email" name="email" placeholder="11@email.sa" disabled >
+                                    <a class="fo-w-b c-blue" href="#">Change</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="security bg-white bor-ra-10 p-10">
+                            <h4>Security Info </h4>
+                            <p class="c-grey fo-s-14">Secourity Information Yor account</p>
+                            <div class="between-f align-c p-bot-20 bor-bott-1-ddd"><div>Password <span class="d-block fo-s-14 c-grey m-top-10 ">Last Change One 25/10/2022</span></div><a class="c-white bor-ra-6 bg-blue b-chip" href="#">Change</a></div>
+                            <div class="between-f align-c p-bot-20 bor-bott-1-ddd m-top-20">
+                                <div>
+                                    <span>Two-Factor Authenticaion</span>
+                                    <span class="d-block fo-s-14 c-grey m-top-10 ">Enable/Disable The Feature</span>    
+                                </div>
+                                <div >
+                                    <label >
+                                        <input class="switch-back" type="checkbox" checked>  
+                                        <div class="switch-front"></div>
+                                    </label>    
+                                </div>
+                            </div>
+                            <div class="between-f align-c p-bot-20  m-top-20"><div>Devices <span class="d-block fo-s-14 c-grey m-top-10 ">Check The Lodin Devices List</span></div><a class=" bor-ra-6 bg-eee b-chip"  href="#">Devices</a></div>
+                        </div>
+                        <div class="Socail-info bg-white  bor-ra-10 p-10">
+                            <h4>Social Info</h4>
+                            <p class="c-grey">Socail Media Information</p>
+                            <div class="d-flex  align-c bg-eee bor-ra-6 bor-1-ddd m-bot-20 "><i class="fa-brands fa-twitter m-r-10 m-l-10"></i> <input class="width-ful bg-eee" type="text" placeholder="Twitter Username"></div>
+                            <div  class="d-flex  align-c bg-eee bor-ra-6 bor-1-ddd m-bot-20 "><i class="fa-brands fa-facebook  m-r-10 m-l-10"></i><input class="width-ful bg-eee" type="text" placeholder="Facebook Username"></div>
+                            <div  class="d-flex  align-c bg-eee bor-ra-6 bor-1-ddd m-bot-20 "><i class="fa-brands fa-linkedin m-r-10 m-l-10"></i><input class="width-ful bg-eee" type="text" placeholder="Linkedin Username"></div>
+                            <div  class="d-flex  align-c bg-eee bor-ra-6 bor-1-ddd m-bot-20 "><i class="fa-brands fa-youtube m-r-10 m-l-10"></i><input class="width-ful bg-eee" type="text" placeholder="Youtube Username"> </div>
+                        </div>
+                        <div class="control bg-white  p-10">
+                            <h4>Widgets Control </h4>
+                            <p class="c-grey m-bot-20">Show/Hide Widgets</p>
+                            <ul > 
+                                <li class="m-bot-20"><input class="m-r-10" type="checkbox" id="ch1" checked><label  for="ch1">Quick Draft</label></li>
+                                <li class="m-bot-20"><input class="m-r-10" type="checkbox" id="ch2"><label  for="ch2">Yerly Taegets</label></li>
+                                <li class="m-bot-20"><input class="m-r-10" type="checkbox" id="ch3" checked><label  for="ch3">Tickets Statistics</label></li>
+                                <li class="m-bot-20"><input class="m-r-10" type="checkbox" id="ch4"><label  for="ch4">Latest News</label></li>
+                                <li class="m-bot-20"><input class="m-r-10"type="checkbox" id="ch5"checked><label  for="ch5">Latest Tasks</label></li>
+                                <li class="m-bot-20"><input class="m-r-10" type="checkbox" id="ch6"><label  for="ch6">Top Search Items</label></li>
+                            </ul>
+                        </div>
+                        <div class="manager bg-white p-10">
+                            <h4>Control Manager </h4>
+                            <p>control Backup Time  And Location</p>
+                            <div class="time">
+                                <div class="m-bot-20" ><input class="m-bot-20 m-r-10" type="radio"  name="s1" id="ss1"><label for="ss1">Daily</label></div>
+                                <div class="m-bot-20"><input class="m-bot-20 m-r-10" type="radio"  name="s1" id="ss2" checked><label for="ss2">Weekly</label></div>
+                                <div class="m-bot-20" ><input class="m-bot-20 m-r-10" type="radio"  name="s1" id="ss3"><label for="ss3">Monthly</label></div>
+                            </div>
+                            <div class="serveses  p-top-20 bor-top-1-ddd txt-c d-flex gap-10 f-dir-c-tel">
+                                <input type="radio" id="server-one" name="soo">
+                                <div class="srev">
+                                    <label class="p-20 bor-1-ddd bor-ra-10 d-block" for="server-one">
+                                        <i class="fa-solid fa-server d-block m-bot-10"></i> 
+                                        Magaman
+                                    </label>
+                                </div>
+                                <input type="radio" id="server-two" name="soo">
+                                <div class="srev">
+                                    <label class="p-20 bor-1-ddd bor-ra-10 d-block" for="server-two">
+                                        <i class="fa-solid fa-server d-block m-bot-10"></i> 
+                                        Zero
+                                    </label>
+                                </div>
+                                <input type="radio" id="server-three" name="soo" checked>
+                                <div class="srev">
+                                    <label class="p-20 bor-1-ddd bor-ra-10 d-block" for="server-three">
+                                        <i class="fa-solid fa-server d-block m-bot-10"></i> 
+                                        Fatima
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>      
+        </div>
+    </body>
+</html>
