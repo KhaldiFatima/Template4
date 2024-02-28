@@ -1,0 +1,205 @@
+//////////////////////////////////////// cour 111
+/*
+BOM [Browser Object Model]
+local storege
+- setItem
+- getItem
+- removeItem
+- clear
+- key
+
+  Info
+  - No Expiration Time
+  - HTTP And HTTPS
+  - PrivAte Tab
+*/
+
+// set Items
+
+// window.localStorage.setItem("color", "orange");
+// window.localStorage.fontSize = "20px";
+// window.localStorage["fontweight"] = "bold";
+
+// get Items
+
+// console.log(window.localStorage.getItem("color"));
+// console.log(window.localStorage.fontSize);
+// console.log(window.localStorage["fontweight"]);
+// document.body.style.backgroundColor = window.localStorage.getItem("color");
+
+// get Key
+// console.log(window.localStorage.key(0));
+
+// remove Itms
+// window.localStorage.removeItem("fontSize");
+
+// remove all
+// window.localStorage.clear();
+
+//////////////////////////////////////// cour 112
+
+// let lis = document.querySelectorAll("li");
+// let exp = document.querySelector(".exp");
+
+// if (window.localStorage.getItem("color")) {
+//   exp.style.backgroundColor = window.localStorage.getItem("color");
+//   lis.forEach(function (e) {
+//     e.classList.remove("active");
+//   });
+
+//   document
+//     .querySelector(`[data-color= "${window.localStorage.getItem("color")}"]`)
+//     .classList.add("active");
+// }
+
+// lis.forEach(function (li) {
+//   li.addEventListener("click", function (e) {
+//     lis.forEach(function (e) {
+//       e.classList.remove("active");
+//     });
+//     e.target.classList.add("active");
+
+//     window.localStorage.setItem("color", e.target.dataset.color);
+//     exp.style.backgroundColor = window.localStorage.getItem("color");
+//   });
+// });
+
+//////////////////////////////////////// cour 113
+
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+  Session Strong
+    - setItems
+    - getItems
+    - removeItems
+    - clear
+    - key
+    
+  Info
+    - New Tab = New Session
+    - Duplicate Tab  = Copy Session
+    - New Tab With Same Url = New Session
+*/
+// window.localStorage.setItem("color", "red");
+// window.sessionStorage.setItem("color", "balck");
+
+// document.querySelector(".input").onblur = function () {
+//   console.log(this.value);
+//   window.localStorage.setItem("value", this.value);
+// };
+// window.onload = function () {
+//   document.querySelector(".input").value = window.localStorage.getItem("value");
+// };
+
+// //////////////////////////////////////// taklif1
+
+// let fonts = document.getElementById("fonts");
+// let color = document.getElementById("color");
+// let cont = document.getElementById("count");
+
+// for (let i = 16; i < 31; i++) {
+//   let op = document.createElement("option");
+//   let nuOp = document.createTextNode(i);
+//   op.appendChild(nuOp);
+//   cont.append(op);
+//   op.value = `${i}`;
+// }
+// let myElement = document.querySelector("div");
+
+// if (
+//   window.localStorage.getItem("fontFamily") &&
+//   window.localStorage.getItem("color") &&
+//   window.localStorage.getItem("fontSize")
+// ) {
+//   fonts.value = window.localStorage.getItem("fontFamily");
+//   myElement.style.fontFamily = `"${window.localStorage.getItem("fontFamily")}"`;
+
+//   color.value = window.localStorage.getItem("color");
+//   myElement.style.color = `${window.localStorage.getItem("color")}`;
+
+//   cont.value = window.localStorage.getItem("fontSize");
+//   myElement.style.fontSize = `${window.localStorage.getItem("fontSize")}px`;
+// }
+
+// fonts.onchange = function () {
+//   window.localStorage.setItem("fontFamily", fonts.value);
+//   myElement.style.fontFamily = `"${window.localStorage.getItem("fontFamily")}"`;
+// };
+// color.onchange = function () {
+//   window.localStorage.setItem("color", color.value);
+//   myElement.style.color = `${window.localStorage.getItem("color")}`;
+// };
+// cont.onchange = function () {
+//   window.localStorage.setItem("fontSize", cont.value);
+//   myElement.style.fontSize = `${window.localStorage.getItem("fontSize")}px`;
+// };
+
+// //////////////////////////////////////// taklif2
+
+// let text = document.querySelector('[type="text"]');
+// let num = document.querySelector('[type="number"]');
+// let email = document.querySelector('[type="email"]');
+// let set = document.querySelector("select");
+
+// window.sessionStorage.setItem("name", text.value);
+// window.sessionStorage.setItem("number", num.value);
+// window.sessionStorage.setItem("email", email.value);
+// window.sessionStorage.setItem("opt", set.value);
+
+// window.onload = function () {
+//   text.value = window.sessionStorage.getItem("name");
+//   num.value = window.sessionStorage.getItem("number");
+//   email.value = window.sessionStorage.getItem("email");
+//   set.value = window.sessionStorage.getItem("opt");
+// };
+
+// set.onchange = function () {
+//   window.sessionStorage.setItem("name", text.value);
+//   window.sessionStorage.setItem("number", num.value);
+//   window.sessionStorage.setItem("email", email.value);
+//   window.sessionStorage.setItem("opt", set.value);
+// };
+
+//////////////////////////////// word serch
+// [JSON.parse()]
+// [JSON.strifnify()]
+// let Fati = { name: "John", age: 30, city: "New York" };
+// let obj = JSON.stringify(Fati);
+// window.localStorage.setItem("Fati", obj);
+// console.log(window.localStorage.getItem("Fati"));
+// let hh = JSON.parse(window.localStorage.getItem("Fati"));
+// console.log(hh);
+
+// //////////////////////////////////////// chellenge
+
+let nod = document.getElementById("text");
+let sub = document.getElementById("submit");
+let myElement = document.getElementsByClassName("tasks")[0];
+sub.addEventListener("click", function (e) {});
+
+document.body.addEventListener("click", function (e) {
+  if (e.target.tagName === "BUTTON") {
+    e.target.parentElement.remove();
+  } else {
+  }
+});
+
+sub.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (nod.value !== "") {
+    let div = document.createElement("div");
+    let nody = document.createTextNode(`${nod.value}`);
+    let bot = document.createElement("button");
+    let botNo = document.createTextNode("Delete");
+    bot.append(botNo);
+    div.appendChild(bot);
+    div.prepend(nody);
+    div.title = `${nod.value}`;
+    myElement.prepend(div);
+    window.localStorage.setItem("tasks", nod.value);
+  }
+});
+// console.log(document.querySelector(".tasks > div"));
